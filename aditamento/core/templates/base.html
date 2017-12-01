@@ -1,0 +1,29 @@
+{% load static %}
+<!--**
+ * @author Cesar Szpak - Celke -   cesar@celke.com.br
+ * @pagina desenvolvida usando framework bootstrap,
+ * o código é aberto e o uso é free,
+ * porém lembre -se de conceder os créditos ao desenvolvedor.
+ *-->
+ <!--**
+ * @author Cesar Szpak - Celke -   cesar@celke.com.br
+ * @pagina desenvolvida usando framework bootstrap,
+ * o código é aberto e o uso é free,
+ * porém lembre -se de conceder os créditos ao desenvolvedor.
+ *-->
+ <!DOCTYPE html>
+ <html lang="pt-br">
+     <head>
+         <meta charset="utf-8">
+         <title>{% block title %}Militar em Missão{% endblock title%}</title>
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+     <head>
+     <body>
+         {% block content %}
+         {% endblock %}
+         <script src="{% static 'js/jquery.min.js' %}"></script>
+         <script src="{% static 'js/bootstrap.min.js' %}"></script>
+     </body>
+ </html>    
